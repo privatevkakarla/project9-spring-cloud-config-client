@@ -1,4 +1,25 @@
+# MicroServices - Spring Cloud Config Server
 
+* Microservices approach now has become an industry standard for any new API development, and almost all the organizations are promoting it. 
+* Spring cloud provides excellent tools to build these microservice on top of the Spring boot framework.
+* In a Microservice world one of the feature called **Config Server**.
+
+#### Config Server
+
+* It is more like externalizing properties/resource file out of project codebase to an external service altogether.
+* So that any changes to any given property does not necessitate the re-deployment of service which is using that property. 
+* All such property changes will be reflected without redeploying the microservice.
+
+## Why to Use Spring Cloud Config Server
+
+* The idea of config server has come from the **12-factor app manifesto** related to the best practices guidelines of developing modern cloud-native applications. 
+* It suggests to externalize properties or resource files out of server where the values of those resources vary during runtime – usually different configurations that will differ in each environment.
+
+#### Twelve-Factor Methodology in a Spring Boot Microservice
+* Ref: https://www.baeldung.com/spring-boot-12-factor
+
+===========================================================================================================================================================
+#### Running Notes
 #### Test REST Endpoint
 
 * Now in the browser open the /msg rest endpoint by browsing the url http://localhost:8080/msg. It should return Hello world - this is from config server which is mentioned in the config-server-client-development.properties file.
